@@ -29,23 +29,15 @@ def print_movie(movie):
 
 def find_movies():
     search_title = input("Enter the movie title: ")
-
-
     for movie in movies:
         if movie['title'] == search_title:
             print_movie(movie)
-        else:
-            print("This movie does not exist in the collection")
 
 def remove_movie():
     title = input("Enter the movie title: ")
-
-
     for movie in movies:
         if movie['title'] == title:
             movies.remove(movie)
-        else:
-            print("This movie does not exist in the collection")
 
 def menu():
     selection = input(MENU_PROMPT)
@@ -64,3 +56,4 @@ def menu():
 
 
 menu()
+
