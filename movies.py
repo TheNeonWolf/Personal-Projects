@@ -34,6 +34,8 @@ def find_movies():
     for movie in movies:
         if movie['title'] == search_title:
             print_movie(movie)
+        else:
+            print("This movie does not exist in the collection")
 
 def remove_movie():
     title = input("Enter the movie title: ")
@@ -42,6 +44,8 @@ def remove_movie():
     for movie in movies:
         if movie['title'] == title:
             movies.remove(movie)
+        else:
+            print("This movie does not exist in the collection")
 
 def menu():
     selection = input(MENU_PROMPT)
@@ -57,5 +61,6 @@ def menu():
         else:
             print('Unknown command. Please try again.')
         selection = input(MENU_PROMPT)
+
 
 menu()
