@@ -1,0 +1,16 @@
+body {
+    background-color: #000000;
+}
+
+#clock {
+    color:#ffffff;
+    font-size: 150px;
+    background-color: #808080;
+    padding: 10px;
+    width: 80%;
+    margin-left: 100px;
+    font-family: Italic;
+    text-align: center;
+    margin-top: 250px;
+
+}
